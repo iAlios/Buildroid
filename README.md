@@ -5,9 +5,7 @@ You will need 3 directories: android-soruce, ccache and android-build
 
     mkdir android-source
     mkdir ccache
-    git clone https://github.com/gfreed/android-build.git android-build
-    cd android-build
-    ./build.sh
+    docker run -i -v $DIR/../android-source:/srv/android -v $DIR/../ccache:/srv/ccache -t Buidroid/Dockerfile /bin/bash
     cd /srv/android
     repo init ....
 
