@@ -1,0 +1,4 @@
+USE_CCACHE=1
+EXPERIMENTAL_USE_JAVA7=1
+CCACHE_DIR=/srv/ccache
+ANDROID_JAVA_HOME=/usr/lib/jvm/java-6-openjdk-amd64
