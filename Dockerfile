@@ -3,7 +3,7 @@ FROM ubuntu
 RUN apt-get update; \  
     apt-get -y upgrade
 
-RUN apt-get purge openjdk-\* icedtea-\* icedtea6-\*
+#RUN apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 
 RUN add-apt-repository "deb http://ppa.launchpad.net/ferramroberto/java/ubuntu natty main"; \
     add-apt-repository "deb http://archive.canonical.com/ubuntu maverick partner"; \
