@@ -9,9 +9,9 @@ RUN add-apt-repository "deb http://ppa.launchpad.net/ferramroberto/java/ubuntu n
     add-apt-repository "deb http://archive.canonical.com/ubuntu maverick partner"; \
     apt-get -y update
 
-RUN apt-get -y install sun-java6-jre sun-java6-plugin
+#RUN apt-get -y install sun-java6-jre sun-java6-plugin
 
-RUN apt-get -y install sun-java6-jdk sun-java6-plugin
+#RUN apt-get -y install sun-java6-jdk sun-java6-plugin
 
 RUN apt-get -y install bison g++-multilib git gperf libxml2-utils
 
