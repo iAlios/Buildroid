@@ -25,7 +25,7 @@ RUN groupadd admin
 # 设置用户 admin ，默认密码为 -p admin，但这里不好用，先进入 root 用户之后修改其对应的密码
 # -p <PASSWORD> encrypted password of the new account 参见/etc/shadow
 # 加密方式如下：
-# |------------------+------------------|
+# +------------------+------------------+
 # |       $1$        +        MD5       |
 # +------------------+------------------+
 # |      $2a$        +     Blowfish     |
