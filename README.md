@@ -24,3 +24,10 @@ docker exec
     # docker exec -it <container-name> /bin/bash
     # for example
     docker exec -it android_builder /bin/bash
+
+docker 使用 其他 用户登录
+
+    # docker exec -u <user> -it <container-name> /bin/bash
+    # for example
+    docker exec -u root -it android_builder /bin/bash
+    
