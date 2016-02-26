@@ -14,6 +14,9 @@ RUN apt-get install -y git-core gnupg flex bison gperf build-essential \
 # 安装 java 环境等
 RUN apt-get install -y openjdk-7-jdk wget unzip vim
 
+# 安装 openssh server
+RUN apt-get install openssh-server
+
 # 下载 repo 工具
 RUN wget 'http://php.webtutor.pl/en/wp-content/uploads/2011/09/repo' -O /usr/local/bin/repo
 RUN chmod +x /usr/local/bin/repo
