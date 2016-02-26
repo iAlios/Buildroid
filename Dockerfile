@@ -26,6 +26,7 @@ RUN mkdir -p /home/admin
 
 # 创建用户 admin
 RUN useradd -d /home/admin -g sudo -ms /bin/bash admin -p admin
+RUN usermod –p admin admin
 # 设置默认进入的用户
 USER admin
 # 设置工作目录
