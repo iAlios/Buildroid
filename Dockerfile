@@ -26,7 +26,7 @@ RUN groupadd admin
 # -p <PASSWORD> encrypted password of the new account 参见/etc/shadow
 # 加密方式如下：
 # |------------------+------------------|
-# |       $1$        +      	MD5       |
+# |       $1$        +      	MD5      |
 # +------------------+------------------+
 # |      $2a$        +     Blowfish     |
 # +------------------+------------------+
