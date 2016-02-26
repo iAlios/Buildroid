@@ -24,6 +24,12 @@ RUN chmod +x /usr/local/bin/repo
 # 配置环境 PATH
 RUN echo "export PATH=$PATH:/usr/local/bin/repo" >> /etc/profile
 
+# 将 ssh server 设置为默认开机启动程序
+RUN sed 's/^exit 0//p' -f test /etc/rc.local
+RUN echo "/etc/init.d/ssh start" >> test
+RUN echo "exit 0" >> test
+RUN mv test /etc/rc.local
+
 # 创建 home 目录
 RUN mkdir -p /home/admin
 
