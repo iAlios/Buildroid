@@ -51,6 +51,8 @@ RUN groupadd admin
 # +------------------+------------------+
 # 上述为 /etc/shadow 文件中加密的方式
 #
+# 最简单的方式找台机器创建用户及密码，将其copy过来即可
+#
 # 比如：
 # admin 通过 SHA-512 加密之后的结果为 $6$R6bmPnMl$i7/CDyVyKKbGEjRUGtEffMMJKNbeoZY93aamU8axq3FPr9N9nNJWe7YNhurMRb4j0NvyALpTYJwC8y.mQqQpE/
 #
