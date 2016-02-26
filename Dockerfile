@@ -1,9 +1,6 @@
 FROM ubuntu  
 
-RUN echo > /etc/apt/sources.list
-RUN echo deb http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse > /etc/apt/sources.list.d/precise.list
-RUN echo deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse >> /etc/apt/sources.list.d/precise.list
-RUN echo deb http://archive.ubuntu.com/ubuntu/ precise-security main restricted universe multiverse >> /etc/apt/sources.list.d/precise.list
+RUN sed -i "s/archive/cn.archive/g" `grep archive -rl /etc/apt/sources.list`
 
 ENV DEBIAN_FRONTEND noninteractive
 
