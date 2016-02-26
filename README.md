@@ -11,10 +11,16 @@ docker执行创建 container
 
     # docker run -v <host>:<container> -p <host>:<container> --name <container-name> -it <image-name> /bin/bash
     # for example
-    docker run -v /mnt/disk1:/home -p 10022:22-name android_builder -it android_build /bin/bash
+    docker run -v /mnt/disk1/docker:/srv -p 10022:22-name android_builder -it android_build /bin/bash
     
 docker 启动
     
     # docker start <image-name>
     # for example
     docker start android_builder
+
+docker exec
+
+    # docker exec -it <container-name> /bin/bash
+    # for example
+    docker exec -it android_builder /bin/bash
