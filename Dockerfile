@@ -43,7 +43,11 @@ RUN groupadd admin
 # |       $6$        +      SHA-512     |
 # +------------------+------------------+
 # 上述为 /etc/shadow 文件中加密的方式
-RUN useradd -d /home/admin -g sudo -G admin,root -ms /bin/bash admin -p admin
+#
+# 比如：
+# admin 通过 SHA-512 加密之后的结果为 $6$R6bmPnMl$i7/CDyVyKKbGEjRUGtEffMMJKNbeoZY93aamU8axq3FPr9N9nNJWe7YNhurMRb4j0NvyALpTYJwC8y.mQqQpE/
+#
+RUN useradd -d /home/admin -g sudo -G admin,root -ms /bin/bash admin -p \$6\$R6bmPnMl\$i7/CDyVyKKbGEjRUGtEffMMJKNbeoZY93aamU8axq3FPr9N9nNJWe7YNhurMRb4j0NvyALpTYJwC8y.mQqQpE/
 
 # 修改文件夹 own
 RUN chown -R admin:admin /home/admin
