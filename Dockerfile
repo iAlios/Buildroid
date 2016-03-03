@@ -11,6 +11,11 @@ RUN apt-get install -y git-core gnupg flex bison gperf build-essential \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
   libgl1-mesa-dev libxml2-utils xsltproc unzip
 
+# android x86 默认使用工具安装
+# RUN apt-get install -y syslinux-utils
+# RUN apt-get install -y python-pip
+# RUN apt-get install -y pyramid_mako
+
 # 安装 java 环境等工具
 RUN apt-get install -y openjdk-7-jdk wget unzip vim
 
