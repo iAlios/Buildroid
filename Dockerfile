@@ -20,6 +20,7 @@ RUN apt-get install -y git-core gnupg flex bison gperf build-essential \
 # RUN tar xf pyramid_mako-1.0.2.tar.gz
 # RUN cd pyramid_mako-1.0.2
 # RUN python setup.py install
+# RUN cd
 
 # 安装 java 环境等工具
 RUN apt-get install -y openjdk-7-jdk wget unzip vim
