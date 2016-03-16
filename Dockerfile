@@ -13,6 +13,7 @@ RUN apt-get install -y git-core gnupg flex bison gperf build-essential \
 
 # android x86 默认使用工具安装
 # RUN apt-get install -y syslinux-utils
+# RUN apt-get install -y gettext
 # RUN apt-get install -y python-pip
 # # RUN apt-get install -y pyramid_mako
 # RUN wget https://pypi.python.org/packages/source/p/pyramid_mako/pyramid_mako-1.0.2.tar.gz
